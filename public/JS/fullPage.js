@@ -71,7 +71,8 @@ $(document).ready(function() {
 
    function fullPage(){
        var scrollOverflow=false;
-       var scrollBar = true;
+       var scrollBar = false;
+       var autoScrolling = true;
 
         var isChromium = window.chrome;
         var winNav = window.navigator;
@@ -83,22 +84,23 @@ $(document).ready(function() {
         if (isIOSChrome) {
            // is Google Chrome on IOS
            scrollOverflow = false;
-           scrollBar = true;
            $(".resume-pdf").removeClass("hide");
            $(".resume-container").addClass("hide");
+           
         } else if(isChromium !== null && typeof isChromium !== "undefined" &&
           vendorName === "Google Inc." &&
           isOpera === false &&
           isIEedge === false
         ) {
           scrollOverflow = false;
-          scrollBar = true;
+          
           $(".resume-pdf").removeClass("hide");
           $(".resume-container").addClass("hide");
         } else {
           console.log("true");
-           scrollOverflow = true;
-           scrollBar = false;
+           scrollOverflow = false;
+           autoScrolling = false;
+           scrollBar = true;
         }
 
        $('#fullpage').fullpage({
@@ -112,8 +114,8 @@ $(document).ready(function() {
         css3:true,
         hybrid:true,
         fitToSection: false,
-//        scrollBar:scrollBar,
-//        autoScrolling:true,
+        scrollBar:scrollBar,
+        autoScrolling:autoScrolling,
         scrollOverflow:scrollOverflow,
         navigation:false,
         showActiveTooltip:false,
