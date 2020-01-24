@@ -7,10 +7,17 @@
   .section{
     font-size: 13px;
   }
+
+  .langs{
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 320px){
   #myMenu{
+    padding-left:10px;
+  }
+  #myMenuEs{
     padding-left:10px;
   }
   .divMenu{
@@ -23,6 +30,15 @@
 }
 
 @media only screen and (min-width: 520px){
+
+  .language-position{
+    right:20px;
+  }
+
+  .language-button{
+    font-size:105%;
+  }
+
   .projects-container-left{
     width:20%;
     /* padding: 2%; */
@@ -32,7 +48,7 @@
     width:76%;
   }
 
-  #pcr-table{
+  .pcr-table{
   }
   .pcr-table-cell{
     width: 45%;
@@ -43,6 +59,9 @@
   }
 
   #myMenu{
+    padding-left:30px;
+  }
+  #myMenuEs{
     padding-left:30px;
   }
   .divMenu{
@@ -58,6 +77,14 @@
 
 
 @media only screen and (min-width: 600px){
+
+  .language-position{
+    right:30px;
+  }
+  .language-button{
+    font-size:110%;
+  }
+
   .section{
     font-size: 14px;
   }
@@ -93,6 +120,10 @@
     left: 7%;
     padding:50px 15px;
   }
+
+  .langs{
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 700px) and (min-height: 720px){
@@ -101,11 +132,23 @@
     padding:100px 40px;
   }
 
+  .langs{
+    font-size: 28px;
+  }
+
 }
 
 
 
 @media only screen and (min-width: 800px) {
+
+  .language-position{
+    right:40px;
+  }
+  .language-button{
+    font-size:115%;
+  }
+
   .section{
     font-size: 16px;
   }
@@ -119,6 +162,13 @@
 }
 
 @media only screen and (min-width: 1200px) {
+
+  .language-position{
+    right:8%;
+  }
+  .language-button{
+    font-size:120%;
+  }
 
   .personal{
     height:700px;

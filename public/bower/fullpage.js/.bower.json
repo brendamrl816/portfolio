@@ -6,20 +6,25 @@
   ],
   "description": "Create  beautiful fullscreen scrolling websites",
   "main": [
-    "dist/jquery.fullpage.js",
-    "dist/jquery.fullpage.css",
-    "dist/jquery.fullpage.scss",
-    "vendors/jquery.easings.min.js",
-    "vendors/scrolloverflow.min.js"
+    "dist/fullpage.js",
+    "dist/fullpage.css"
   ],
   "keywords": [
     "jquery",
     "scrolling",
     "single_page",
     "one_page",
-    "sliding"
+    "sliding",
+    "snap",
+    "scroll",
+    "sections",
+    "slides",
+    "swipe",
+    "mousewheel",
+    "onepage",
+    "slidehow"
   ],
-  "license": "MIT",
+  "license": "GPL-3.0",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -28,18 +33,15 @@
     "tests",
     "examples"
   ],
-  "dependencies": {
-    "jquery": ">=1.6.0"
-  },
-  "version": "2.8.1",
-  "_release": "2.8.1",
+  "version": "3.0.8",
+  "_release": "3.0.8",
   "_resolution": {
     "type": "version",
-    "tag": "2.8.1",
-    "commit": "87c7b66935b5a03699c65bd42205dc8db387a989"
+    "tag": "3.0.8",
+    "commit": "ca7c4321daa4b2a0c3c3f44946e9ad6ab39dbe10"
   },
   "_source": "https://github.com/alvarotrigo/fullPage.js.git",
-  "_target": "^2.8.1",
+  "_target": "^3.0.8",
   "_originalSource": "fullpage.js",
   "_direct": true
 }

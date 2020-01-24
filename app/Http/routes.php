@@ -15,4 +15,12 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/es', function () {
+    return view('homeEs');
+});
+Route::get('/en', function () {
+    return view('homeEn');
+});
+
+
 Route::post('sendEmail', 'EmailsController@sendEmail');
