@@ -139,7 +139,7 @@
 
         </div>
 
-        <div class="section fp-auto-height">
+        <div class="section">
           <div class="contact">
             <div style="margin: 8% auto 5% auto; width:95%; text-align:center;">
               <h2>CONTACT ME</h2>

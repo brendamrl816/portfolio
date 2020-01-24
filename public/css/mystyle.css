@@ -476,7 +476,9 @@
         cursor: context-menu;
     }
 
-
+    .fp-scroller{
+      overflow:hidden;
+    }
 
 
 
