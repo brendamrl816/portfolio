@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- **************************************************preloader******************************************* -->
-    <!-- <div class="preloader">
+    <div class="preloader">
       <div style="font-size:200%;">Brenda Castillo</div>
       <div class="preloader-dot-container">
         <div id="pl-dot1" class="loader-dot" style="background-color:#eab2bc;"></div>
@@ -13,7 +13,7 @@
         <div id="pl-dot5" class="loader-dot" style="background-color:#c7843f;"></div>
         <div id="pl-dot6" class="loader-dot" style="background-color:#9fb361;"></div>
       </div>
-    </div> -->
+    </div>
 
 
 <!-- **************************************************languages******************************************* -->
