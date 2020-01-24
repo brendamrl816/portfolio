@@ -14,14 +14,11 @@ $(document).ready(function() {
 
 
   $('.langs-container').css({marginTop: $window.height()/2 - 10});
-  $("#main").fadeIn();
-
 
     $window.trigger('scroll');
 
     $('.nav-a').fadeOut();
     $("#fullpage").addClass("hide");
-    $("#fullpagees").addClass("hide");
     $('.preloader').css({opacity:1});
 
     toggleLoad();
@@ -85,6 +82,10 @@ $(document).ready(function() {
 
         if (isIOSChrome) {
            // is Google Chrome on IOS
+           scrollOverflow = false;
+           scrollBar = true;
+           $(".resume-pdf").removeClass("hide");
+           $(".resume-container").addClass("hide");
         } else if(isChromium !== null && typeof isChromium !== "undefined" &&
           vendorName === "Google Inc." &&
           isOpera === false &&
@@ -94,10 +95,8 @@ $(document).ready(function() {
           scrollBar = true;
           $(".resume-pdf").removeClass("hide");
           $(".resume-container").addClass("hide");
-          console.log("false");
         } else {
           console.log("true");
-
            scrollOverflow = true;
            scrollBar = false;
         }
@@ -147,7 +146,9 @@ $(document).ready(function() {
 
 
 function mainPicIn(){
+    $("#main").removeClass("hide");
     $(".language").removeClass("hide");
+    $(".langs-container").removeClass("hide");
     $('.enterDiv').css({height:$window.height(), left: 0, bottom: 0});
 
     $('.nav-a').fadeIn();

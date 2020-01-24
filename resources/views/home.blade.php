@@ -18,14 +18,14 @@
 
 <!-- **************************************************languages******************************************* -->
 
-  <div class="language langs">
-    <div class="langs-container">
+  <div class="language langs hide">
+    <div class="langs-container hide">
       <a href="es"><button class="lang-button language-button">Español</button></a>
       <a href="en"><button class="lang-button language-button">English</button></a>
     </div>
   </div>
 
-  <div id="main" class=""></div>
+  <div id="main" class="hide"></div>
 
 
 @endsection
