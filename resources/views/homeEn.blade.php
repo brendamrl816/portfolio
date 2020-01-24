@@ -139,7 +139,7 @@
 
         </div>
 
-        <div class="section">
+        <div class="section fp-auto-height">
           <div class="contact">
             <div style="margin: 8% auto 5% auto; width:95%; text-align:center;">
               <h2>CONTACT ME</h2>
@@ -165,12 +165,18 @@
               </div>
             </div>
 
+            <div class="resume-pdf hide">
+              <a href="/pictures/BrendaCastillo_Resume.pdf" download>
+                <button class="resume-pdf-button">Download my resume</button>
+              </a>
+            </div>
+
             <div class="resume-container">
               <!-- <iframe src="url=../pictures/BrendaCastillo_Resume.pdf&embedded=true"></iframe> -->
               <img class="resume-container-pdf" src="pictures/BrendaCastillo_Resume-1.png"><img>
               <img class="resume-container-pdf" src="pictures/BrendaCastillo_Resume-2.png"><img>
-
             </div>
+
           </div>
         </div>
 

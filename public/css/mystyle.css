@@ -381,6 +381,16 @@
      width: 95%;
    }
 
+   .resume-pdf-button{
+    padding: 15px;
+    font-size: 120%;
+    border-radius: 15px;
+    background-color: #ca8b5d;
+    border: none;
+    cursor: pointer;
+    margin: 15px auto 40px auto;
+   }
+
 
     .nav-button{
         color:#135271;

@@ -169,6 +169,12 @@
               </div>
             </div>
 
+            <div class="resume-pdf hide">
+              <a href="/pictures/BrendaCastillo_CV.pdf" download>
+                <button class="resume-pdf-button">Descarga mi currículum</button>
+              </a>
+            </div>
+
             <div class="resume-container">
               <!-- <iframe src="url=../pictures/BrendaCastillo_Resume.pdf&embedded=true"></iframe> -->
               <img class="resume-container-pdf" src="pictures/BrendaCastillo_CV-1.png"><img>

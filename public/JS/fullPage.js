@@ -9,9 +9,9 @@ var load = true;
 var dots = true;
 
 $(document).ready(function() {
-    
-   
-   
+
+
+
 
   $('.langs-container').css({marginTop: $window.height()/2 - 10});
   $("#main").fadeIn();
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     toggleLoad();
     toggleDots();
-    
+
     fullPage();
 
 
@@ -51,9 +51,9 @@ $(document).ready(function() {
     $(".divMenu").click(function(event){
       event.stopImmediatePropagation();
     });
-    
-    
-    
+
+
+
 });
 
 
@@ -74,10 +74,34 @@ $(document).ready(function() {
 
    function fullPage(){
        var scrollOverflow=false;
-       
-       if( $(window).width() > 991 ) scrollOverflow = true;
-        else scrollOverflow = false;
-        
+       var scrollBar = true;
+
+        var isChromium = window.chrome;
+        var winNav = window.navigator;
+        var vendorName = winNav.vendor;
+        var isOpera = typeof window.opr !== "undefined";
+        var isIEedge = winNav.userAgent.indexOf("Edge") > -1;
+        var isIOSChrome = winNav.userAgent.match("CriOS");
+
+        if (isIOSChrome) {
+           // is Google Chrome on IOS
+        } else if(isChromium !== null && typeof isChromium !== "undefined" &&
+          vendorName === "Google Inc." &&
+          isOpera === false &&
+          isIEedge === false
+        ) {
+          scrollOverflow = false;
+          scrollBar = true;
+          $(".resume-pdf").removeClass("hide");
+          $(".resume-container").addClass("hide");
+          console.log("false");
+        } else {
+          console.log("true");
+
+           scrollOverflow = true;
+           scrollBar = false;
+        }
+
        $('#fullpage').fullpage({
         licenseKey: '15B50F8C-B5F449EB-9ADCB4C7-9697616B',
         sectionSelector: '.section',
@@ -89,14 +113,14 @@ $(document).ready(function() {
         css3:true,
         hybrid:true,
         fitToSection: false,
-//        scrollBar:true,
+//        scrollBar:scrollBar,
 //        autoScrolling:true,
         scrollOverflow:scrollOverflow,
         navigation:false,
         showActiveTooltip:false,
 
         afterLoad: function(anchorLink, index){
-           
+
         },
 
        onLeave: function(index, nextIndex, direction){
@@ -108,8 +132,8 @@ $(document).ready(function() {
     });
 
    }
-   
-   
+
+
 
 
 
